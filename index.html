@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="limitar-secao">
+        <div class="cabecalho">
+            <img class="logo" src="assets/logo.png" alt="logo">
+            <p>Calculadora de IMC</p>
+        </div>
+
+    </header>
+    <section class="limitar-secao" id="calculadora">
+        <div class="dados" id="dados">
+            <p>Altura <input type="number" placeholder="Ex: 1.78" id="altura">  m</p>
+            <p>Peso <input type="number" placeholder="Ex: 70" id="peso">  Kg</p>
+            <p><button value="calcula" onclick="calcular()">Calcular</button></p>
+        </div>
+        <div class="resultado" id="resultado">
+            
+
+        </div>      
+    
+        <div class="img-lado">
+            <img src="assets/yoga.rosa.png" alt="yoga">
+        </div>
+
+    </section>
+    <footer class="limitar-secao">
+        <p>&copy; Desensolvido por Dev - Ale</p>
+    
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
