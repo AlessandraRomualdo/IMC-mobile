@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@
     box-sizing: border-box;
 }
 .limitar-secao{
-    max-width:1420px ;
+    width:700px ;
     margin: auto;
 }
 body{
@@ -15,11 +17,11 @@ body{
     font-family: 'Poppins';
 }
 .cabecalho img{
-    width: 80px;
+    width: 70px;
     padding: 10px;
 }
 .cabecalho{
-    height: 90px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -39,13 +41,12 @@ section{
     display: flex;
     align-items: center;
     margin-top: 30px;
-    height: 500px;
-    width: 620px;
+    height: 400px;
+    width: 340px;
 }
 .dados{
     height: 300px;
-    width: 500px;
-    
+    width: 370px;    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,11 +72,11 @@ button{
    text-align: center;
     padding: 40px;
     height: 300px;
-    width: 500px; 
+    width: 370px; 
 }
 .img-lado{
     height: 600px;
-    width: 700px;
+    width: 370px;
 }
 footer{
     height: 50px;
@@ -94,57 +95,39 @@ input{
     border: dashed 1px palevioletred;
     border-radius: 4px;
 }
-
-@media (max-width: 1024px){
-    section{
-        height: auto;
-    }
-    .dados,.resultado{
-        width: 500px;
-        height: auto;
-    }
-    .img-lado{
-        width: 00px;
-        height: auto;
-    }
-    .img-lado img{
-        width: auto;
-        height: auto;
-    }
+footer a{
+    text-decoration: none;
+    color: darksalmon;
+    font-weight: bolder;
 }
 
-@media (max-width: 768px){
-    section{
+@media screen  and (min-width: 320px) {
+
+    .limitar-secao{
+        width: 370px;
         height: auto;
     }
-    .dados,.resultado{
-        width: 760px;
-        height: auto;
-    }
-    .img-lado{
-        width: auto;
-        height: auto;
-    }
-    .img-lado img{
-        margin-top: 2px;
-        width: 340px;
-        height: 300px;
-    }
-}
-@media (max-width: 375px){
-    section{
-        height: auto;
-    }
-    .dados,.resultado{
-        width: 350px;
+    .dados{
+        width: 370px;
         height: auto;
     }
     .img-lado{
         width: 370px;
         height: auto;
+        padding: 10px;
+        
     }
     .img-lado img{
-        width: 340px;
+        width: 350px;
+    }
+    section{
+        display:block;
+    }
+    .resultado{
+        width: 370px;
         height: auto;
     }
+    
 }
+
+
